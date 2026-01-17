@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "created_at": "2026-01-17T00:00:00Z",
+  "updated_at": "2026-01-17T00:00:00Z",
+  "name": "Paste Current Date",
+  "author": {
+    "name": "Freeway Team",
+    "url": "https://tryfreeway.com"
+  },
+  "compatibility": ["macOS"],
+  "categories": ["Productivity"],
+  "tags": ["date", "time", "timestamp"],
+  "description": "Insert the current date (YYYY-MM-DD) or date and time (YYYY-MM-DD HH:MM:SS) by saying 'current date' or 'current date and time'.",
+  "trigger": {
+    "pattern": "^current date( and time)?$",
+    "matchType": "regex"
+  },
+  "command": "if echo \"$FREEWAY_TEXT\" | grep -qi \"and time\"; then\n    date \"+%Y-%m-%d %H:%M:%S\"\nelse\n    date \"+%Y-%m-%d\"\nfi"
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "created_at": "2026-01-17T00:00:00Z",
+  "updated_at": "2026-01-17T00:00:00Z",
+  "name": "Find in Google",
+  "author": {
+    "name": "Freeway Team",
+    "url": "https://tryfreeway.com"
+  },
+  "compatibility": ["macOS"],
+  "categories": ["Web"],
+  "tags": ["google", "search", "browser"],
+  "description": "Search Google for anything by saying 'Find in Google' followed by your query.",
+  "trigger": {
+    "pattern": "find in google",
+    "matchType": "startsWith"
+  },
+  "command": "query=$(echo \"$FREEWAY_TEXT\" | sed -E 's/^find in google[[:space:]]*//i')\nencoded=$(printf '%s' \"$query\" | jq -sRr @uri)\nopen \"https://google.com/search?q=$encoded\""
+}

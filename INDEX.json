@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "updated_at": "2026-01-17T00:00:00Z",
+  "items": [
+    {
+      "id": "toggle-hidden-files",
+      "name": "Toggle Hidden Files",
+      "version": 1,
+      "created_at": "2026-01-17T00:00:00Z",
+      "updated_at": "2026-01-17T00:00:00Z",
+      "categories": ["System"],
+      "author": {
+        "name": "Freeway Team",
+        "url": "https://tryfreeway.com"
+      },
+      "tags": ["finder"],
+      "description": "Toggle visibility of hidden files in Finder with a voice command.",
+      "source_url": "https://github.com/tryfreeway/freeway-pipelines/tree/main/pipelines/toggle-hidden-files"
+    },
+    {
+      "id": "find-in-google",
+      "name": "Find in Google",
+      "version": 1,
+      "created_at": "2026-01-17T00:00:00Z",
+      "updated_at": "2026-01-17T00:00:00Z",
+      "categories": ["Web"],
+      "author": {
+        "name": "Freeway Team",
+        "url": "https://tryfreeway.com"
+      },
+      "tags": ["google", "search", "browser"],
+      "description": "Search Google for anything by saying 'Find in Google' followed by your query.",
+      "source_url": "https://github.com/tryfreeway/freeway-pipelines/tree/main/pipelines/find-in-google"
+    },
+    {
+      "id": "paste-current-date",
+      "name": "Paste Current Date",
+      "version": 1,
+      "created_at": "2026-01-17T00:00:00Z",
+      "updated_at": "2026-01-17T00:00:00Z",
+      "categories": ["Productivity"],
+      "author": {
+        "name": "Freeway Team",
+        "url": "https://tryfreeway.com"
+      },
+      "tags": ["date", "time", "timestamp"],
+      "description": "Insert the current date (YYYY-MM-DD) or date and time (YYYY-MM-DD HH:MM:SS) by saying 'current date' or 'current date and time'.",
+      "source_url": "https://github.com/tryfreeway/freeway-pipelines/tree/main/pipelines/paste-current-date"
+    },
+    {
+      "id": "selection-case-converter",
+      "name": "Selection to Upper/Lower Case",
+      "version": 1,
+      "created_at": "2026-01-17T00:00:00Z",
+      "updated_at": "2026-01-17T00:00:00Z",
+      "categories": ["Text Processing"],
+      "author": {
+        "name": "Freeway Team",
+        "url": "https://tryfreeway.com"
+      },
+      "tags": ["uppercase", "lowercase", "text"],
+      "description": "Convert selected text to uppercase or lowercase. Say 'make uppercase' or 'make lowercase' while text is selected.",
+      "source_url": "https://github.com/tryfreeway/freeway-pipelines/tree/main/pipelines/selection-case-converter"
+    },
+    {
+      "id": "create-text-file",
+      "name": "Create Text File",
+      "version": 1,
+      "created_at": "2026-01-17T00:00:00Z",
+      "updated_at": "2026-01-17T00:00:00Z",
+      "categories": ["System"],
+      "author": {
+        "name": "Freeway Team",
+        "url": "https://tryfreeway.com"
+      },
+      "tags": ["finder"],
+      "description": "Create a text file with your spoken content. Say 'create text file' followed by the content you want to save. The file will be pasted into the current Finder window.",
+      "source_url": "https://github.com/tryfreeway/freeway-pipelines/tree/main/pipelines/create-text-file"
+    }
+  ]
+}

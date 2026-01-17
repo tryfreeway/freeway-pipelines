@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "created_at": "2026-01-17T00:00:00Z",
+  "updated_at": "2026-01-17T00:00:00Z",
+  "name": "Create Text File",
+  "author": {
+    "name": "Freeway Team",
+    "url": "https://tryfreeway.com"
+  },
+  "compatibility": ["macOS"],
+  "categories": ["System"],
+  "tags": ["finder"],
+  "description": "Create a text file with your spoken content. Say 'create text file' followed by the content you want to save. The file will be pasted into the current Finder window.",
+  "trigger": {
+    "pattern": "create text file",
+    "matchType": "startsWith"
+  },
+  "command": "content=$(echo \"$FREEWAY_TEXT\" | sed -E 's/^create text file[[:space:]]*//i')\nfilename=\"text-$(date +%Y%m%d-%H%M%S).txt\"\nfilepath=\"$HOME/Desktop/$filename\"\necho \"$content\" > \"$filepath\"\nosascript -e \"set the clipboard to POSIX file \\\"$filepath\\\"\"\nsleep 0.1\nosascript -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'"
+}
