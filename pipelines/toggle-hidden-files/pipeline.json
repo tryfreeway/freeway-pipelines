@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "heardAs": "toggle hidden files",
+  "matchType": "match",
+  "name": "Toggle Hidden Files",
+  "shellCommand": "osascript -e 'tell application \"System Events\" to keystroke \".\" using {command down}'"
+}

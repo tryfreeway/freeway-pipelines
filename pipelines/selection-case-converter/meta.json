@@ -15,6 +15,5 @@
   "trigger": {
     "pattern": "^make (uppercase|lowercase)$",
     "matchType": "regex"
-  },
-  "command": "osascript -e 'tell application \"System Events\" to keystroke \"c\" using {command down}'\nsleep 0.1\ntext=$(pbpaste)\nif echo \"$FREEWAY_TEXT\" | grep -qi \"uppercase\"; then\n    echo \"$text\" | tr '[:lower:]' '[:upper:]' | pbcopy\nelse\n    echo \"$text\" | tr '[:upper:]' '[:lower:]' | pbcopy\nfi\nosascript -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'"
+  }
 }

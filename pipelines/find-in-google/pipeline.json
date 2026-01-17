@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "heardAs": "find in google",
+  "matchType": "startsWith",
+  "name": "Find in Google",
+  "shellCommand": "query=$(echo \"$FREEWAY_TEXT\" | sed -E 's/^find in google[[:space:]]*//i')\nencoded=$(printf '%s' \"$query\" | jq -sRr @uri)\nopen \"https://google.com/search?q=$encoded\""
+}

@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "heardAs": "^current date( and time)?$",
+  "matchType": "regex",
+  "name": "Paste Current Date",
+  "shellCommand": "if echo \"$FREEWAY_TEXT\" | grep -qi \"and time\"; then\n    date \"+%Y-%m-%d %H:%M:%S\"\nelse\n    date \"+%Y-%m-%d\"\nfi"
+}

@@ -15,6 +15,5 @@
   "trigger": {
     "pattern": "create text file",
     "matchType": "startsWith"
-  },
-  "command": "content=$(echo \"$FREEWAY_TEXT\" | sed -E 's/^create text file[[:space:]]*//i')\nfilename=\"text-$(date +%Y%m%d-%H%M%S).txt\"\nfilepath=\"$HOME/Desktop/$filename\"\necho \"$content\" > \"$filepath\"\nosascript -e \"set the clipboard to POSIX file \\\"$filepath\\\"\"\nsleep 0.1\nosascript -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'"
+  }
 }

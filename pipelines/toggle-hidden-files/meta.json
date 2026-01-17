@@ -14,6 +14,5 @@
   "trigger": {
     "pattern": "toggle hidden files",
     "matchType": "match"
-  },
-  "command": "osascript -e 'tell application \"System Events\" to keystroke \".\" using {command down}'"
+  }
 }

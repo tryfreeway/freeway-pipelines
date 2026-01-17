@@ -15,6 +15,5 @@
   "trigger": {
     "pattern": "find in google",
     "matchType": "startsWith"
-  },
-  "command": "query=$(echo \"$FREEWAY_TEXT\" | sed -E 's/^find in google[[:space:]]*//i')\nencoded=$(printf '%s' \"$query\" | jq -sRr @uri)\nopen \"https://google.com/search?q=$encoded\""
+  }
 }
