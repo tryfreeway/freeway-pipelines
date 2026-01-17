@@ -13,7 +13,7 @@
   "description": "Toggle visibility of hidden files in Finder with a voice command.",
   "trigger": {
     "pattern": "toggle hidden files",
-    "matchType": "exactMatch"
+    "matchType": "match"
   },
   "command": "osascript -e 'tell application \"System Events\" to keystroke \".\" using {command down}'"
 }
